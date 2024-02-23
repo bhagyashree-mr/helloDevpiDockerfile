@@ -8,5 +8,5 @@ WORKDIR /app
 RUN pip install -i http://172.28.221.47:3141/bmr/devpiPackages/ helloDevpi --trusted-host 172.28.221.47
 
 # Define the command to run when the container starts
-CMD ["bash", "-c", "hello_devpi && devpi list -v && pip show helloDevpi"]
+CMD ["bash", "-c", "hello_devpi && pip list -v && pip show helloDevpi"]
 
